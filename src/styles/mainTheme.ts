@@ -3,8 +3,8 @@ const createVariants = (
   s: "r" | "m" | "b"
 ) => {
   const sizeValue = {
-    title: 32,
-    subtitle: 24,
+    title: 24,
+    subtitle: 20,
     body: 16,
     caption: 12,
   }
@@ -22,13 +22,13 @@ const createVariants = (
 }
 
 const colors = {
-  primary: "#FF6B6B",
-  secondary: "#FFE66D",
-  tertiary: "#88D8B0",
+  primary: "#4479FB",
+  secondary: "#88D8B0",
+  tertiary: "#F5FAFE",
   black: "#000000",
   white: "#FFFFFF",
   gray: "#F7F7F7",
-  lightGray: "#F0F0F0",
+  lightGray: "#e0e0e0",
   darkGray: "#BDBDBD",
   error: "#FF6B6B",
   warning: "#FFE66D",
@@ -68,11 +68,11 @@ const spaces = {
 const variants = {
   h1: {
     size: "64px",
-    weight: 500,
+    weight: 700,
   },
   h2: {
     size: "56px",
-    weight: 500,
+    weight: 700,
   },
   h3: {
     size: "48px",

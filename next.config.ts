@@ -7,8 +7,16 @@ const nextConfig = {
     return [
       {
         source: "/",
-        destination: "/home",
+        destination: "/login",
         permanent: true,
+      },
+    ]
+  },
+  rewrites: async () => {
+    return [
+      {
+        source: "/admin/api/:path*",
+        destination: "https://admin.octover.co.kr/admin/api/:path*",
       },
     ]
   },
