@@ -1,9 +1,5 @@
-import {
-  QueryCache,
-  QueryClient,
-  QueryClientProvider,
-} from "@tanstack/react-query"
 import useApiErrorHandler from "@hooks/useApiErrorHandler"
+import { QueryCache, QueryClient, QueryClientProvider } from "react-query"
 
 const ReactQueryProvider = ({ children }: { children: React.ReactNode }) => {
   const { handleErrors } = useApiErrorHandler()

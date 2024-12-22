@@ -11,6 +11,7 @@ interface TypographyProps {
   pr?: SpacesType
   ellipsis?: boolean
   noWrap?: boolean
+  cursor?: string
   children: React.ReactNode
 }
 
@@ -24,6 +25,7 @@ const Typography = ({
   pr,
   ellipsis,
   noWrap,
+  cursor,
   children,
 }: TypographyProps) => {
   return (
@@ -37,6 +39,7 @@ const Typography = ({
       pr={pr}
       ellipsis={ellipsis}
       noWrap={noWrap}
+      cursor={cursor}
     >
       {children}
     </Span>

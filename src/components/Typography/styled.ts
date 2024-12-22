@@ -12,6 +12,7 @@ interface TypographyProps {
   noWrap?: boolean
   pl?: number
   pr?: number
+  cursor?: string
 }
 
 export const Span = styled.span<TypographyProps>`
@@ -26,6 +27,7 @@ export const Span = styled.span<TypographyProps>`
   padding-right: ${({ pr }) => pr}px;
   white-space: ${({ noWrap }) => (noWrap ? "nowrap" : "normal")};
   overflow: ${({ ellipsis }) => (ellipsis ? "hidden" : "visible")};
+  cursor: ${({ cursor }) => cursor};
 
   -webkit-user-select: none;
   -moz-user-select: none;

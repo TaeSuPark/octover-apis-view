@@ -2,12 +2,8 @@ import { VStack } from "@components/FlexBoxGroup"
 import Input from "@src/components/Input/Input"
 import Typography from "@src/components/Typography/Typograpy"
 import useLogin from "@hooks/useLogin"
-import { useRecoilState } from "recoil"
-import { loginTokenState } from "@src/recoil/dataAtom"
 
 export default function LoginView() {
-  const [loginToken, asda] = useRecoilState<string>(loginTokenState)
-
   const { id, password, loginMutate, handleIdChange, handlePasswordChange } =
     useLogin()
 
