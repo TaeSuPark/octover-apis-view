@@ -1,9 +1,18 @@
-interface ButtonProps {}
+import Typography from "../Typography/Typograpy"
+import { SubmitButton } from "./styled"
 
-export default function Button({}: ButtonProps) {
+interface ButtonProps {
+  title: string
+  onClick?: () => void
+  disabled?: boolean
+}
+
+export default function Button({ title, disabled, onClick }: ButtonProps) {
   return (
-    <div>
-      <h1>Button</h1>
-    </div>
+    <SubmitButton onClick={disabled ? () => {} : onClick}>
+      <Typography variant="body-r" color="white">
+        {title}
+      </Typography>
+    </SubmitButton>
   )
 }

@@ -2,6 +2,7 @@ import { VStack } from "@components/FlexBoxGroup"
 import Input from "@src/components/Input/Input"
 import Typography from "@src/components/Typography/Typograpy"
 import useLogin from "@hooks/useLogin"
+import Button from "@src/components/Button/Button"
 
 export default function LoginView() {
   const { id, password, loginMutate, handleIdChange, handlePasswordChange } =
@@ -32,9 +33,11 @@ export default function LoginView() {
             />
           </VStack>
 
-          <button onClick={() => loginMutate()} disabled={!id || !password}>
-            로그인
-          </button>
+          <Button
+            title="로그인"
+            onClick={() => loginMutate()}
+            disabled={!id || !password}
+          />
         </VStack>
       </VStack>
     </VStack>
